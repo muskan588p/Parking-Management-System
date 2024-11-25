@@ -1,0 +1,79 @@
+/* General Styling for Wallet Component */
+div {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Wallet Container */
+  .wallet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Wallet Heading */
+  .wallet-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Container */
+  .wallet-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Button Styling */
+  .wallet-buttons button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wallet-buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .wallet-buttons button:active {
+    background-color: #388e3c;
+  }
+  
+  .wallet-buttons button:last-child {
+    background-color: #2196f3;
+  }
+  
+  .wallet-buttons button:last-child:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .wallet-container {
+      width: 90%;
+    }
+  
+    .wallet-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .wallet-buttons button {
+      width: 100%;
+    }
+  }
+  

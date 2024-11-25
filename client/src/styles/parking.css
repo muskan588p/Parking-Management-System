@@ -1,0 +1,73 @@
+/* Main container styling */
+.main-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Parking space layout */
+.parking-space {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Individual parking section */
+.parking-section {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.parking-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Slots container */
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Individual slot styling */
+.slot {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.slot:hover {
+  background-color: #388e3c;
+}
+
+.slot:active {
+  background-color: #2e7d32;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .parking-space {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parking-section {
+    width: 90%;
+  }
+}
